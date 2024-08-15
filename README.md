@@ -1,5 +1,7 @@
 # BASH-Log-Script
 
+Task: Create a BASH script that will search the log file for "404" errors and identify the IP addresses associated with them.  Then provide the number of times each IP encountered a 404.
+
 ## Isolating lines with 404 status codes
 First, tested grep command in script to see if lines with " 404 " (indicating the 404 status code) would show up. This worked.
 ![image](https://github.com/user-attachments/assets/73b3d075-dddb-4442-8780-d1d1d226f5a6)
@@ -48,3 +50,5 @@ Added this line in my script, but appended the output to yet another file. I tri
 So I added in an echo message to preface the output and ended the script with a cat command.
 
 ![image](https://github.com/user-attachments/assets/9539a339-598d-4f50-b9aa-789ae1da791e)
+
+Ideas for optimizing this script would be to overwrite the files' inputs with `>>` everytime the script is run to eliminate duplicates and get an accurate output, or figure out a way to update the same file throughout each section of the script so I don't have so many file variables. Can also use a while loop to check if the file is empty before writing to it.
