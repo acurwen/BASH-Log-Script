@@ -3,7 +3,6 @@
 #Checking log files for 404 errors & providing the number of times each IP encountered a 404 error.
 
 #Creating files to hold each output
-
 #Main file
 source_file="/home/ubuntu/Class_Scripts/web-server-access-logs.log"
 
@@ -15,6 +14,7 @@ IPs_file="/home/ubuntu/Class_Scripts/IPs.txt"
 
 #File to hold the output of IPs and their occurrences
 counter="/home/ubuntu/Class_Scripts/HI.txt"
+
 
 #Search the main log file for all occurrences of 404 Status Code and print them to new file
 cat "$source_file" | grep " 404 " > "$dest_file"
