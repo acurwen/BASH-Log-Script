@@ -52,3 +52,5 @@ So I added in an echo message to preface the output and ended the script with a 
 ![image](https://github.com/user-attachments/assets/9539a339-598d-4f50-b9aa-789ae1da791e)
 
 Ideas for optimizing this script would be to overwrite the files' inputs with `>>` everytime the script is run to eliminate duplicates and get an accurate output, or figure out a way to update the same file throughout each section of the script so I don't have so many file variables. Can also use a while loop to check if the file is empty before writing to it.
+
+***Reviewing the instructions and seeing that we need to include a loop or conditional. Next time I could have done an if conditional testing if any of the three files were empty before copying anything into them to avoid duplicates. To do this I could write `if [ -s "$counter" ]` as my condition. 
